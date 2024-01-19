@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
 </head>
 <body>
+    <h1 id="display"></h1>
     <div id="container">
-        <button id="buttonOne">1</button>
-        <button id="buttonTwo">2</button>
-        <button id="buttonThree">3</button>
-        <button id="buttonFour">4</button>
-        <button id="buttonFive">5</button>
-        <button id="buttonSix">6</button>
-        <button id="buttonSeven">7</button>
-        <button id="buttonEight">8</button>
-        <button id="buttonNine">9</button>
-        <button id="buttonZero">0</button>
+        <div id="numbers">
+
+            <div class="row" id="rowOne">    
+                <button id="buttonSeven">7</button>
+                <button id="buttonEight">8</button>
+                <button id="buttonNine">9</button>
+            </div>
+
+            <div class="row" id="rowTwo">
+                <button id="buttonFour">4</button>
+                <button id="buttonFive">5</button>
+                <button id="buttonSix">6</button>
+            </div>
+
+
+            <div class="row" id="rowThree">
+                <button id="buttonOne">1</button>
+                <button id="buttonTwo">2</button>
+                <button id="buttonThree">3</button>
+            </div>
+
+            <div class="row" id="rowFour">
+                <button id="buttonZero">0</button>
+            </div>
+        </div>
+        
+        <div id="operators">
+            <button id="buttonClear">C</button>
+            <button id="buttonDivide">/</button>
+            <button id="buttonMultiply">x</button>
+            <button id="buttonSubtract">-</button>
+            <button id="buttonAdd">+</button>
+            <button id="buttonEquals">=</button>
+        </div>
     </div>
 </body>
 </html>

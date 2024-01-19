@@ -81,12 +81,10 @@ btn.forEach(function(button){
 
         } else if(operatorArray.includes(button.textContent) && !(operator)){
                     operator = button.textContent;
-                                                        console.log(operator + ' is operator LINE 90')
                         display.textContent = '';
 
             } else if(button.textContent == '=' && operator){
                 secondNum = display.textContent;
-                    console.log(secondNum + ' is secondNum LINE 95')
                         display.textContent = operate(Number(firstNum), Number(secondNum),operator);
                                 clearCalc();
                                     total = display.textContent;
@@ -98,13 +96,9 @@ btn.forEach(function(button){
                         if(total){
                             display.textContent = '';
                                 total = 0;
-                        }
-                }
-                    //if first number and operator already exist, when attempting to enter number 2 wipe the display.
-                    //(but not on every button press, we only want it to wipe on the first before pressing another operator)
+                        };
+                };
                 display.textContent += button.textContent;
             };
-
-
-    })
-})
+    });
+});
